@@ -1,10 +1,10 @@
-<?php
-    include '../../config/connection.php';
+<?php 
+    include '../../config/connection.php'; 
 
     $id = isset($_GET['id']) ? $_GET['id'] : exit();
 
     if (empty($id)) {
-        echo 'É necessário informar o código!';
+        echo "É necessário informar o código!";
         exit();
     }
 
@@ -12,6 +12,5 @@
     $stmt->bindParam(':id', $id);
     $stmt->execute();
 
-    Header('Location: read.php');
-
+    Header("Location: read.php");
 ?>
