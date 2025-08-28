@@ -1,9 +1,10 @@
 <?php
+
     // Configuração da conexão com BD
     $host = 'localhost';
-    $database = 'ebooks';
+    $database = 'sistema_ebooks';
     $user = 'root';
-    $password = '';
+    $password = '123456';
 
     // Realizando conexão com o BD por meio
     //do plugin PHP PDO
@@ -12,5 +13,5 @@
     } catch (PDOException $erro) {
         die("Erro de conexão: " . $erro->getMessage());
     }
-    
-    ?>
+
+?> 
